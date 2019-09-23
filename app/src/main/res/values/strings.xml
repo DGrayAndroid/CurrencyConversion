@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Currency Conversion</string>
+    <string name="radEuro">Euros (EUR)</string>
+    <string name="radPeso">Mexican Pesos (MXN)</string>
+    <string name="radCaD">Canadian Dollars (CAD)</string>
+    <string name="txtTitle">Currency Converter</string>
+    <string name="hint">Enter USD Value to Convert</string>
+    <string name="btnConvert">Convert Currency</string>
+</resources>
