@@ -46,19 +46,20 @@ public class MainActivity extends AppCompatActivity {
 
                 if(usd <= 100000) {
                     DecimalFormat currencyUSD = new DecimalFormat("$###,###.##");
+                    DecimalFormat rounded = new DecimalFormat("##.##");
                     if(radEuro.isChecked()) {
                         converted = usd * rateEuro;
-                        result.setText(currencyUSD.format(usd) + " is equal to " + converted + " EUR");
+                        result.setText(currencyUSD.format(usd) + " is equal to " + rounded.format(converted) + " EUR");
                     }
 
                     if(radPeso.isChecked()) {
                         converted = usd * ratePeso;
-                        result.setText(currencyUSD.format(usd) + " is equal to " + converted + " MXN");
+                        result.setText(currencyUSD.format(usd) + " is equal to " + rounded.format(converted) + " MXN");
                     }
 
                     if(radCaD.isChecked()) {
                         converted = usd * rateCaD;
-                        result.setText(currencyUSD.format(usd) + " is equal to " + converted + " CAD");
+                        result.setText(currencyUSD.format(usd) + " is equal to " + rounded.format(converted) + " CAD");
                     }
                 } else {
                     Toast.makeText(MainActivity.this, "Please enter a value below $100,000.00", Toast.LENGTH_LONG);
